@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 app.use(cors());
 
 //Iniciando o MongoDB
-mongoose.connect(`mongodb://${USER_DB}:${PASSWORD_DB}@ds155203.mlab.com:55203/jiraiyadb`, { 
+mongoose.connect(MONGODB_URI, { 
     useNewUrlParser: true 
 });
 
