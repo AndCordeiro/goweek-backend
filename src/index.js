@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 app.use(cors());
 
 //Iniciando o MongoDB
-mongoose.connect(MONGODB_URI, { 
+mongoose.connect(process.env.MONGODB_URI, { 
     useNewUrlParser: true 
 });
 
